@@ -1,0 +1,1 @@
+shel basic directory
