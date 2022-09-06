@@ -1,2 +1,2 @@
 #!/bin/bash
-find beatiful -type d| wc -l
+find . beatiful -type d| wc -l
