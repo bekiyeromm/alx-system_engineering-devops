@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(((a)+128))
+echo $(((TRUEKNOWLEDGE)+128))
