@@ -1,2 +1,2 @@
 #!/bin/bash
-bash -c 'printf "%s\n" {{a..z}{a..z}}' head -64
+bash -c 'printf "%s\n" {{a..z}{a..z}}' |head -64
