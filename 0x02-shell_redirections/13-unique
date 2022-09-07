@@ -1,2 +1,2 @@
 #!/bin/bash
-cat cc |sort |uniq -u
+sort cc |uniq -u
