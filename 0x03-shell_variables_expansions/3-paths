@@ -1,2 +1,2 @@
 #!/bin/bash
-find $($PATH) -mindepth 1 -type d |wc -l
+ls -lR $(($PATH) | grep ^d) | wc -l
