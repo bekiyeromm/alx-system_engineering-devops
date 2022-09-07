@@ -1,2 +1,2 @@
 #!/bin/bash
-sort cc |uniq -u
+cat cc.sh | sort | uniq -c | grep -e '^\s.*1\s' | awk '{print $NF}' 
