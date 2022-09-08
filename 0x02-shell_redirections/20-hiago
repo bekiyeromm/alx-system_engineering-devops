@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "camelCase" |tr -d c/C/g
