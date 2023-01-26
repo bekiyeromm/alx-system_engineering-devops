@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # displaying "Best School" 10 times using while loop only
 i=1
-while (( $i<=10 ))
+while [ $i -le 10 ];
 do
     echo "Best School"
     (( ++i ))
