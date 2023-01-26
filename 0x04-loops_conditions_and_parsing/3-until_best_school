@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# displaying "Best School" 10 times using until loop only
+#body of until is executed if condtion is evaluated to fales
+i=1
+until (( i>10 ));
+do
+    echo "Best School"
+    i=$((i+1))
+done
