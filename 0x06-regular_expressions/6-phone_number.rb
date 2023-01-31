@@ -1,2 +1,6 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/[0-9]{10}/).join
+# ^ indicates start of expression
+# \d refers digit only
+# {10} match of 10 digits without any space
+# $ end of expression marker
+puts ARGV[0].scan(/^\d{10}$/).join
