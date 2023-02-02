@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+hostname -I | cut -d' ' -f1 ; hostname -i
