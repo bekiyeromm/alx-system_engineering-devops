@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Name of the private key
 KEY_NAME="school"
 # Number of bits in the key
