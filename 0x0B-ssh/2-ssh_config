@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # this script update ssh config
 Host school
-    HostName 54.172.81.144
+    HostName 34.229.137.228
     User ubuntu
     PasswordAuthentication no
     IdentityFile ~/.ssh/school
