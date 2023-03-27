@@ -1,0 +1,13 @@
+here is the steps how you do the answer for question number 3
+1. go to your server page by"ssh your_username@your_server_ip_address"
+2. long list the file you will get .ssh directory
+3. cd in to .ssh
+4. long list the file in .ssh directory using ls -ls command
+5. you will see a file named authorized_keys
+6. open it using any editor like vi or vim
+7. now, the file contains two keys that is one is akey ending with ...alx_applicant_server
+and the other key is your public key
+now append the given public key at the end of the file 
+n.b dont delete any of those key
+finally save change the file permision of authorized_keys to 600 and .ssh dir to 700
+now it will work you can check your checker
