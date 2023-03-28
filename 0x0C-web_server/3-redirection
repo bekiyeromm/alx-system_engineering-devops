@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Install Nginx web server
+apt-get update
+apt-get install -y nginx
+
+# Add server block for redirection
+echo "server {
+    listen 80;
+    listen [::]:80;
+    server_name Holb2023erab3h.tech;
+    location /redirect_me {
+        return 301 https://twitter.com/BereketTena1;
+    }
+}" > /etc/nginx/sites-available/default
+
+# Test and reload Nginx configuration
+nginx -t && systemctl reload nginx
