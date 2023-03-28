@@ -9,7 +9,7 @@ echo "server {
     listen [::]:80;
     server_name Holb2023erab3h.tech;
     location /redirect_me {
-        return 301 https://twitter.com/BereketTena1;
+        return 301 https://www.Holb2023erab3h.tech/new_page;;
     }
 }" > /etc/nginx/sites-available/default
 
