@@ -15,7 +15,7 @@ Resources
 Read or watch:
 [Introduction to load-balancing and HAproxy](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)<br>
 [HTTP header](https://www.techopedia.com/definition/27178/http-header)<br>
-[Debian/Ubuntu HAProxy packages](Debian/Ubuntu HAProxy packages)<br>
+[the-nginx-handbook](https://www.freecodecamp.org/news/the-nginx-handbook/)<br>
 <h1>
 Requirements
 </h1>
