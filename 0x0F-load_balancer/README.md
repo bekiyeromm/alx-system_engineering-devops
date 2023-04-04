@@ -1,8 +1,8 @@
 <h1>0x0F-load_balancer</h1>
 <h2> concept</h2>
-[load balancer](https://intranet.alxswe.com/concepts/46)"\n"
-[web stack debuging](https://intranet.alxswe.com/concepts/68)"\n"
-<h2>Background Context
+[load balancer](https://intranet.alxswe.com/concepts/46) <br>
+[web stack debuging](https://intranet.alxswe.com/concepts/68)<br>
+<h2>Background Context</h2>
 You have been given 2 additional servers:
 
 gc-[STUDENT_ID]-web-02-XXXXXXXXXX
@@ -13,10 +13,9 @@ For this project, you will need to write Bash scripts to automate your work. All
 
 Resources
 Read or watch:
-</h2>
-[Introduction to load-balancing and HAproxy](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)"\n"
-[HTTP header](https://www.techopedia.com/definition/27178/http-header)"\n"
-[Debian/Ubuntu HAProxy packages](Debian/Ubuntu HAProxy packages)"\n"
+[Introduction to load-balancing and HAproxy](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)<br>
+[HTTP header](https://www.techopedia.com/definition/27178/http-header)<br>
+[Debian/Ubuntu HAProxy packages](Debian/Ubuntu HAProxy packages)<br>
 <h1>
 Requirements
 </h1>
@@ -30,10 +29,10 @@ Your Bash script must pass Shellcheck (version 0.3.7) without any error
 The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
 The second line of all your Bash scripts should be a comment explaining what is the script doing
 
-<h1>Your servers>/h1>
+<h1>Your servers</h1>
 
-Name	Username	IP	State
-128037-web-01	ubuntu	34.229.137.228	running
-128037-web-02	ubuntu	100.25.17.98	running
-128037-lb-01	ubuntu	100.26.163.179	running
+Name	Username	IP	State<br>
+128037-web-01	ubuntu	34.229.137.228	running<br>
+128037-web-02	ubuntu	100.25.17.98	running<br>
+128037-lb-01	ubuntu	100.26.163.179	running<br>
 
