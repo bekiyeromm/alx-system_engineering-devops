@@ -1,0 +1,13 @@
+# /etc/default/ufw
+#
+
+# Set the default forward policy to ACCEPT
+DEFAULT_FORWARD_POLICY="ACCEPT"
+
+# /etc/ufw/ufw.conf
+#
+
+# Enable forwarding and NAT translation
+net.ipv4.ip_forward=1
+net.ipv6.conf.default.forwarding=1
+net.ipv6.conf.all.forwarding=1
