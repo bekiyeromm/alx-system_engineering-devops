@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Write a Bash script that configures the container to fit
+# nginx must be running as nginx user
+# nginx must be listening on all active IPs on port 8080
+chmod 777 /etc/nginx/nginx.conf
+pkill apache2
+sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
+sudo -u nginx service nginx start
