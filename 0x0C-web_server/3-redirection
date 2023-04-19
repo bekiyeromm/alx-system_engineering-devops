@@ -1,17 +1,9 @@
 #!/usr/bin/env bash
-# Install Nginx web server
-apt-get update
-apt-get install -y nginx
-
-# Add server block for redirection
-echo "server {
-    listen 80;
-    listen [::]:80;
-    server_name yeroma.tech;
-    location /redirect_me {
-        return 301 https://www.yeroma.tech/new_page;;
-    }
-}" > /etc/nginx/sites-available/default
-
-# Test and reload Nginx configuration
-nginx -t && systemctl reload nginx
+# Bash script containing commands to automatically configure a Ubuntu machine to
+# configure a Nginx server so that /redirect_me is redirecting to another page
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+echo "Holberton School" | sudo tee /var/www/html/index.nginx-debian.html
+sudo sed -i "/listen \[\:\:\]\:80 default_server;/a rewrite ^/redirect_me https://www.youtube.com permanent;" /etc/nginx/sites-available/default
+sudo service nginx start
