@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# curling port 80 return a page that contains Hello Holberton
-sudo service apache2 start
-sudo echo "Hello Holberton" | /var/www/html/index.html
