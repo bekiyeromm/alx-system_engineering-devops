@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# change nginx to listen on port 80 and kill it
-ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
-sudo service nginx restart
-pkill -f "nginx"
-
