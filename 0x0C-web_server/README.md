@@ -25,14 +25,14 @@ run your script on it
 see how it behaves
 </p>
 <h1> Resources</h1>
-[how the web works]( )<br>
-[Nginx]( )<br>
-[how to configure nginx]( )<br>
-[root and sub domain]( )<br>
-[http request]( )<br>
-[http redirection]( )<br>
-[Not found HTTP response code]( )<br>
-[Logs files on Linux]( )<br>
+[how the web works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works )<br>
+[Nginx](https://en.wikipedia.org/wiki/Nginx )<br>
+[how to configure nginx](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04 )<br>
+[root and sub domain](https://landingi.com/help/domains-vs-subdomains/ )<br>
+[http request](https://www.tutorialspoint.com/http/http_methods.htm )<br>
+[http redirection](https://moz.com/learn/seo/redirection )<br>
+[Not found HTTP response code](https://en.wikipedia.org/wiki/HTTP_404 )<br>
+[Logs files on Linux](https://www.cyberciti.biz/faq/ubuntu-linux-gnome-system-log-viewer/ )<br>
 <p>man or help:<br>
 scp<br>
 curl<br>
