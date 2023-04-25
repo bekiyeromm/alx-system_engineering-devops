@@ -5,5 +5,5 @@ sudo apt-get -y install nginx
 sudo chown -R "$USER":"$USER" /var/www/
 sudo chown -R "$USER":"$USER" /etc/nginx
 echo "Hello World!" >/var/www/html/index.html
-sudo sed -i "/servr_name _;/a \\\trewrite ^/redirect_me https://www.youtube.com/watch?v=CevxZvSJLk8 permanent;" /etc/nginx/sites-available/default
+sudo sed -i "/servr_name _;/a \\\trewrite ^/redirect_me https://https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
 sudo systemctl restart nginx
