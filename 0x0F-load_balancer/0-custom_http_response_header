@@ -2,9 +2,10 @@
 # Configure Nginx so that its HTTP response contains a custom header (on web-01 and web-02
 apt-get update
 apt-get install -y nginx
-
+mkdir -p /var/www/html
 touch /var/www/html/index.html
 echo "Hello world" > /var/www/html/index.html
+touch /var/www/html/404.html
 echo "hello world from $HOSTNAME" > /var/www/html/404.html
 
 printf %s "server {
@@ -22,3 +23,4 @@ printf %s "server {
       internal;
     }
 }" > /etc/nginx/sites-available/default
+sudo service nginx restart
