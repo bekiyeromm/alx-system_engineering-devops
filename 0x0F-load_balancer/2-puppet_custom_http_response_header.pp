@@ -12,11 +12,11 @@ file { '/etc/nginx/conf.d/custom_headers.conf':
   owner   => 'root',
   group   => 'root',
   mode    => '0644',
-  content => "add_header X-Served-By $hostname;",
+  content => "add_header X-Served-By ${hostname};",
   notify  => Service['nginx'],
 }
 service { 'nginx':
-  ensure => running,
-  enable => true,
+  ensure  => running,
+  enable  => true,
   require => File['/etc/nginx/conf.d/custom-http-header.conf'],
 }
