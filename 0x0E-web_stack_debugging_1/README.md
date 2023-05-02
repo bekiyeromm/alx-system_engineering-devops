@@ -21,9 +21,9 @@ For this project, we expect you to look at these concepts:
 - You are not allowed to use wget
 # Tasks
 
-## 0. Nginx likes port 80
+	## 0. Nginx likes port 80
 
-	Using your debugging skills, find out what’s keeping your Ubuntu container’s Nginx installation from listening on port 80. Feel free to install whatever tool you need, start and destroy as many containers as you need to debug the issue. Then, write a Bash script with the minimum number of commands to automate your fix.
+Using your debugging skills, find out what’s keeping your Ubuntu container’s Nginx installation from listening on port 80. Feel free to install whatever tool you need, start and destroy as many containers as you need to debug the issue. Then, write a Bash script with the minimum number of commands to automate your fix.
 
 Requirements:
 
@@ -62,7 +62,7 @@ Requirements:
 	</html>
 	root@966c5664b21f:/#
 
-#1. Make it sweet and short
+	#1. Make it sweet and short
 
 #advanced
 Using what you did for task #0, make your fix short and sweet.
