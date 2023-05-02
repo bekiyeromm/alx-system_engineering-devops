@@ -76,7 +76,7 @@ Using what you did for task #0, make your fix short and sweet.
 - You cannot use wget
 - You cannot execute your previous answer file (Do not include the name of the previous script in this one)
  service (init) must say that nginx is not running ← for real
-
+	
 	root@966c5664b21f:/# curl 0:80
 	curl: (7) Failed to connect to 0 port 80: Connection refused
 	root@966c5664b21f:/#
@@ -113,8 +113,5 @@ Using what you did for task #0, make your fix short and sweet.
 	root@966c5664b21f:/# service nginx status
 	 * nginx is not running
 	root@966c5664b21f:/# 
-	Repo:
-
-GitHub repository: alx-system_engineering-devops
-Directory: 0x0E-web_stack_debugging_1
-File: 1-debugging_made_short
+	
+	
