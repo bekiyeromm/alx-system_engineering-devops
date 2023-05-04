@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# # make Ubuntu container’s Nginx installation do listening on port 80 with in 5 line
-sudo sed -i 's/8080 default_server/80 default_server/g' /etc/nginx/sites-enabled/default
-sudo systemctl restart nginx
-sudo rm /var/run/nginx.pid
+# make Ubuntu container’s Nginx installation do listening on port 80 with in 5 line
+sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+sudo pkill -1 nginx
