@@ -1,0 +1,49 @@
+sudo apt-get update
+sudo apt-get install certbot
+Generate a certificate for your domain using certbot:
+sudo certbot certonly --standalone -d www.example.com
+Replace www.example.com with your own domain name.
+
+Verify that the certificate was generated successfully by checking the /etc/letsencrypt/live directory:
+ls /etc/letsencrypt/live/www.example.com/
+Open your HAproxy configuration file:
+
+sudo nano /etc/haproxy/haproxy.cfg
+Add the following lines to the file:
+frontend http-in
+    bind *:80
+    bind *:443 ssl crt /etc/letsencrypt/live/www.example.com/fullchain.pem
+    mode http
+    default_backend servers
+
+backend servers
+    mode http
+    balance roundrobin
+    server web1 web-01.example.com:80 check
+    server web2 web-02.example.com:80 check
+Replace www.example.com with your own domain name and web-01.example.com and web-02.example.com with the IP addresses or hostnames of your web servers.
+
+These lines configure HAproxy to listen on ports 80 and 443, use SSL to terminate encrypted traffic, and balance the traffic between the two web servers.
+
+Save and close the file.
+
+Restart HAproxy to apply the changes:
+
+sudo service haproxy restart
+Open your web browser and navigate to https://www.example.com/.
+
+Verify that the page returned contains Holberton School.
+
+Note: It's important to keep the certificate up-to-date by running certbot periodically to renew it.
+
+HAProxy needs an ssl-certificate to be one file, in a certain format. To do that, we create a new directory where the SSL certificate that HAProxy reads will live. Then we output the "live" (latest) certificates from LetsEncrypt and dump that output into the certificate file for HAProxy to use:
+
+sudo mkdir -p /etc/ssl/demo.scalinglaravel.com
+
+sudo cat /etc/letsencrypt/live/demo.scalinglaravel.com/fullchain.pem \
+    /etc/letsencrypt/live/demo.scalinglaravel.com/privkey.pem \
+    | sudo tee /etc/ssl/demo.scalinglaravel.com/demo.scalinglaravel.com.pem
+The /etc/letsencrypt/live/your-domain-here.tld directory will contain symlinks to your current, most up-to-date certificate.
+
+So, we make sure a directory exists for our certificate, and then we concatenate the contents of the fullchain.pem file (certificate and certificate chain) and the private key privkey.pem file. We put the outputs into the file demo.scalinglaravel.com.pem. The order we concatenate the files matter (fullchain followed by private key).
+
