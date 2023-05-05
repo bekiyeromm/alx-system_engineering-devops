@@ -44,8 +44,8 @@ defaults
 
 
    frontend www
-	bind *:443 ssl crt /etc/haproxy/certs/fullchain.pem
-	#bind *:443 ssl crt /etc/letsencrypt/live/www.yeroma.tech/fullchain.pem
+	#bind *:443 ssl crt /etc/haproxy/certs/fullchain.pem
+	bind *:443 ssl crt /etc/ssl/www.yeroma.tech/www.yeroma.tech.pem
 	mode http
         default_backend back_server
    backend back_server
