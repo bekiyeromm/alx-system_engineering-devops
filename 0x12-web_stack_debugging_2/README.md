@@ -57,8 +57,8 @@ Requirements:
  - nginx must be listening on all active IPs on port 8080
  - You cannot use apt-get remove
  - Write a Bash script that configures the container to fit the above requirements
- After debugging:
-
+After debugging:
+	
  	root@ab6f4542747e:~# ps auxff | grep ngin[x]
 	nginx      884  0.0  0.0  77360  2744 ?        Ss   19:16   0:00 nginx: master process /usr/sbin/nginx
 	nginx      885  0.0  0.0  77712  2772 ?        S    19:16   0:00  \_ nginx: worker process
@@ -69,13 +69,14 @@ Requirements:
 	root@ab6f4542747e:~# nc -z 0 8080 ; echo $?
 	0
 	root@ab6f4542747e:~#
-
+	
 #### GitHub repository: alx-system_engineering-devops
 #### Directory: 0x12-web_stack_debugging_2
 #### File: 1-run_nginx_as_nginx
 
-### 2. 7 lines or less
-### advanced
+
+#### 2. 7 lines or less
+#### advanced
 Using what you did for task #1, make your fix short and sweet.
 
 Requirements:
@@ -88,8 +89,7 @@ Requirements:
  - You cannot use wget
  - You cannot execute your previous answer file (Do not include the name of the previous script in this one)
 
-### Repo:
-
+#### Repo:
 #### GitHub repository: alx-system_engineering-devops
 #### Directory: 0x12-web_stack_debugging_2
 #### File: 100-fix_in_7_lines_or_less
