@@ -1,0 +1,39 @@
+check weather haproxy is runing or not
+
+    systemctl status haproxy
+
+stop the service if runing
+
+    sudo service haproxy stop
+
+Check the Expiry Date: First, confirm the expiration date of your current certificate. You can use the following command to check the expiry date:
+
+    certbot certificates
+
+This command will display a list of your certificates along with their expiry dates.
+
+Renew the Certificate: If your certificate is about to expire or has less than 30 days remaining, you can renew it using Certbot (the official Let's Encrypt client). Run the following command to renew the certificate:
+
+    sudo certbot renew
+
+This command will automatically renew all your certificates that are due for renewal.
+
+Auto-renewal Setup (Optional): To enable automatic certificate renewal, you can set up a cron job to run the certbot renew command periodically. This will ensure that your certificates are automatically renewed before they expire. To set up the cron job, open the crontab editor:
+
+    sudo crontab -e
+
+Add the following line to the crontab file to run the renewal command daily:
+
+    0 0 * * * certbot renew
+
+Save and exit the crontab editor. This will run the renewal command every day at midnight.
+
+finally start the haproxy service
+
+    sudo service haproxy start
+
+Please note that the exact commands and steps may vary depending on your system and the version of Certbot you are using. If you are using a different ACME client or a web hosting control panel, the renewal process may be slightly different.
+
+It's always a good practice to test the renewal process before the certificate expiration to ensure that everything is set up correctly. Additionally, make sure that the renewal process is working correctly by checking the certificate's expiry date after running the renewal command.
+
+Remember to follow the specific documentation provided by Let's Encrypt or your hosting provider for the most accurate instructions based on your setup and environment.
